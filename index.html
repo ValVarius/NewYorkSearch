@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW YORK TIME</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
 
     <div class="primaryContainer">
 
-        <header> <!-- Banner -->
-            
+        <header><!-- Banner -->
+            <img id="banner" src="https://www.androidguys.com/wp-content/uploads/2012/12/new_york_times_720.jpg">
         </header> <!-- END of Banner-->
-        
+
 
         <div class="secondaryContainer">
             <h3>Search Parameters</h3>
 
             <p>Search Term:</p>
-            <label><input type="text" id="searchTerm"></input></label>
+            <label><input class="inputBox" type="text" id="searchTerm"></input></label>
 
             <p>Number of Records to Retrieve:</p>
-            <label><sselect id=numberRecords></select></label>
+            <label>
+                <select id="numberRecords" class="inputBox">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
 
             <p>Start Year(Optional)</p>
-            <label><input type="text" id="startYear"></input></label>
+            <label><input type="text" id="startYear" class="inputBox"></input></label>
 
             <p>End Year(Optional)</p>
-            <label><input type="text" id="endYear"></input></label>
+            <label><input type="text" id="endYear" class="inputBox"></input></label>
 
-            <button id="seachBtn">Search</button>
-            <button id="clearBtn">Clear</button>
+            <button id="searchBtn" class="btn">Search</button>
+            <button id="clearBtn" class="btn">Clear</button>
         </div> <!-- END of secondaryContainer-->
 
         <div class="thirdContainer">
@@ -40,6 +53,7 @@
 
     </div> <!-- END of primaryContainer-->
 
-
 </body>
+
+
 </html>
